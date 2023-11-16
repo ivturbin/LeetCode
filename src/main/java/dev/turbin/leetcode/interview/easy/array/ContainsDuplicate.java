@@ -1,4 +1,4 @@
-package dev.turbin.leetcode.array;
+package dev.turbin.leetcode.interview.easy.array;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,8 +13,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 public class ContainsDuplicate {
-
-
 
     @Test
     void test1() {
