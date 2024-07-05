@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize,
  * and consists of groupSize consecutive cards.
  */
-@SpringBootTest
+
 public class HandOfStraights {
 
     @Test
