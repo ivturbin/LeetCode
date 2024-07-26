@@ -22,6 +22,7 @@ public class MergeIntervals {
     }
 
 
+    //todo: wrong solution
     public int[][] merge(int[][] intervals) {
         byte[] indexation = new byte[10000];
 
