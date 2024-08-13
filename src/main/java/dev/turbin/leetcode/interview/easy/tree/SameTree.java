@@ -1,5 +1,6 @@
 package dev.turbin.leetcode.interview.easy.tree;
 
+import dev.turbin.leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -34,11 +35,11 @@ public class SameTree {
                 .isEqualTo(false);
     }
 
-    public boolean isSameTree(TreeNode p, TreeNode q) {
+    public static boolean isSameTree(TreeNode p, TreeNode q) {
         return isSameTreeRecursive(p, q);
     }
 
-    private boolean isSameTreeRecursive(TreeNode p, TreeNode q) {
+    private static boolean isSameTreeRecursive(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
         }
@@ -56,22 +57,5 @@ public class SameTree {
     }
 
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }
